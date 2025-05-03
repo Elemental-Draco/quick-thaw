@@ -135,6 +135,7 @@ table {
 body {
   max-width: 1000px;
   margin: 0 auto;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 h1,
@@ -144,4 +145,16 @@ h4,
 h5,
 h6 {
   font-family: 'Croissant One', 'Times New Roman', serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }

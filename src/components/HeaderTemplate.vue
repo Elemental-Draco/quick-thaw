@@ -25,4 +25,19 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
 }
+
+button {
+  background: none;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: blue 3px solid;
+}
 </style>
