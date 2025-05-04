@@ -45,18 +45,22 @@ ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
+  width: 100%;
+  max-width: 500px;
 }
 
 li {
   background-color: rgb(46, 46, 46);
   border-radius: 10px;
   width: 100%;
-  padding: 20px;
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: white;
+
+  padding: 20px;
 }
 </style>

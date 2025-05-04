@@ -4,9 +4,12 @@
     <h1>Quick Thaw</h1>
     <button><img src="../assets/setting.png" alt="Settings Menu" /></button>
   </header>
+  <SettingsModal />
 </template>
 
-<script setup></script>
+<script setup>
+import SettingsModal from './modals/SettingsModal.vue'
+</script>
 
 <style scoped>
 header {
