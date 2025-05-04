@@ -5,6 +5,7 @@
       <button @click="close">&#10005;</button>
       <div>
         <label for="name">Change Name</label>
+        <!-- TODO implement name changing-->
         <input type="text" id="name" name="name" v-model="name" />
       </div>
       <button @click="readName">click</button>
