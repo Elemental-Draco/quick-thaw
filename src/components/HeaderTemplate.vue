@@ -2,13 +2,22 @@
   <header>
     <img src="../assets/knife-logo.png" alt="Logo for Quick Thaw App." />
     <h1>Quick Thaw</h1>
-    <button><img src="../assets/setting.png" alt="Settings Menu" /></button>
+    <button @click="toggleSettingsModal">
+      <img src="../assets/setting.png" alt="Settings Menu" />
+    </button>
   </header>
-  <SettingsModal />
+  <SettingsModal v-if="showSettings" @closeModal="toggleSettingsModal" />
 </template>
 
 <script setup>
 import SettingsModal from './modals/SettingsModal.vue'
+import { ref } from 'vue'
+
+const showSettings = ref(false)
+
+function toggleSettingsModal() {
+  showSettings.value = !showSettings.value
+}
 </script>
 
 <style scoped>

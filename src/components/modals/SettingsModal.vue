@@ -2,7 +2,7 @@
   <div class="blackout"></div>
   <div class="modal-container">
     <div class="modal-box">
-      <button @click="closeModal">&#10005;</button>
+      <button @click="close">&#10005;</button>
       <div>
         <label for="name">Change Name</label>
         <input type="text" id="name" name="name" v-model="name" />
@@ -16,6 +16,11 @@
 import { ref } from 'vue'
 
 const name = ref('')
+const emit = defineEmits(['closeModal'])
+
+function close() {
+  emit('closeModal')
+}
 
 function readName() {
   console.log(name.value)
